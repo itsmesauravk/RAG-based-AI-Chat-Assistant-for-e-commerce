@@ -1,0 +1,29 @@
+[
+  {
+    "id": "p001",
+    "name": "Clear Silicone Case for iPhone 13",
+    "description": "Transparent silicone case with shock-absorbing corners. Slim fit with anti-yellowing layer.",
+    "price": 399,
+    "brand": "CoverFlex",
+    "compatibility": ["iPhone 13"],
+    "features": ["transparent", "shock-absorbing", "anti-yellowing"]
+  },
+  {
+    "id": "p002",
+    "name": "Leather Flip Cover for Samsung Galaxy S23",
+    "description": "Premium vegan leather flip cover with magnetic closure, card slots, and stand feature.",
+    "price": 699,
+    "brand": "EliteGear",
+    "compatibility": ["Samsung Galaxy S23"],
+    "features": ["leather", "flip", "card slots", "stand"]
+  },
+  {
+    "id": "p003",
+    "name": "Glow-in-the-Dark TPU Case for OnePlus 11",
+    "description": "Flexible TPU case with phosphorescent layer that glows in the dark. Drop-tested for durability.",
+    "price": 499,
+    "brand": "BrightShell",
+    "compatibility": ["OnePlus 11"],
+    "features": ["glow-in-the-dark", "TPU", "durable"]
+  }
+]

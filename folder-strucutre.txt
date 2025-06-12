@@ -1,0 +1,35 @@
+mobile-cover-chatbot/
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # FastAPI app
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── schemas.py       # Pydantic models
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── rag_service.py   # RAG logic
+│   │   ├── llm_service.py   # LLM integration
+│   │   └── vector_service.py # Pinecone operations
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── config.py        # Configuration
+│   └── data/
+│       ├── products.json    # Product catalog
+│       ├── policies.txt     # Store policies
+│       └── faqs.txt         # FAQs
+├── requirements.txt
+├── .env
+├── docker-compose.yml
+└── README.md
+
+
+
+
+Running
+1. first uploading data 
+    python -m scripts.ingest_data
+
+2. run main file
+    uvicorn app.main:app --reload
+
+
