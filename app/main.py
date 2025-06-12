@@ -20,6 +20,10 @@ rag_service = RAGService()
 async def root():
     return {"message": "Welcome to the Mobile Cover Store Chatbot API"}
 
+#health check endpoint
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
 
 @app.post("/chat", response_model=ChatResponse)
@@ -30,6 +34,3 @@ async def chat_endpoint(request: ChatRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
